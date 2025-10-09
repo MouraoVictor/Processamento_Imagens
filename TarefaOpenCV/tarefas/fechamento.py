@@ -13,7 +13,6 @@ else:
 
     # Redimensiona a imagem
     imagem_redimensionada = cv2.resize(imagem, None, fx=0.35, fy=0.35)
-#    imagem_redimensionada = cv2.resize(imagem, None, fx=1, fy=1)
 
     # Converte a imagem para tons de cinza
     gray_img = cv2.cvtColor(imagem_redimensionada, cv2.COLOR_BGR2GRAY)
