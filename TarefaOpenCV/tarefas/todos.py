@@ -1,11 +1,7 @@
 import cv2
 import numpy as np
-import os
 
-# Captura a imagem
-#caminho_da_imagem = 'C:/Users/tinho/OneDrive/Imagens/WallPapers/porsche_911_carrera_4s_cabriolet_jpeg-wallpaper-3840x1080.jpg'
-#caminho_da_imagem = 'C:/Users/tinho/OneDrive/Imagens/WallPapers/teste.png'
-caminho_da_imagem = os.path.join('..', 'pics', 'image1.jpeg')
+caminho_da_imagem = 'C:/Users/tinho/OneDrive/Imagens/WallPapers/teste.png'
 imagem = cv2.imread(caminho_da_imagem)
 
 # Verificação se Lê a imagem corretamente
@@ -15,7 +11,7 @@ else:
     print("Imagem carregada com sucesso! Prosseguindo com as operações.")
 
     # Redimensiona a imagem
-    imagem_redimensionada = cv2.resize(imagem, None, fx=1, fy=1)
+    imagem_redimensionada = cv2.resize(imagem, None, fx=0.35, fy=0.35)
 
     # Converte a imagem para tons de cinza
     gray_img = cv2.cvtColor(imagem_redimensionada, cv2.COLOR_BGR2GRAY)

@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Captura a imagem
-caminho_da_imagem = "porsche.jpg"
+caminho_da_imagem = "C:/Users/tinho/OneDrive/Imagens/WallPapers/teste2.png"
 imagem = cv2.imread(caminho_da_imagem)
 
 # Verificação se Lê a imagem corretamente

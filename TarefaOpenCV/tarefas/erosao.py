@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Captura a imagem
-caminho_da_imagem = "porsche.jpg"
+caminho_da_imagem = "C:/Users/tinho/OneDrive/Imagens/WallPapers/porsche_911_carrera_4s_cabriolet_jpeg-wallpaper-3840x1080.jpg"
 imagem = cv2.imread(caminho_da_imagem)
 
 # Verificação se Lê a imagem corretamente
@@ -15,7 +15,7 @@ else:
     imagem_redimensionada = cv2.resize(imagem, None, fx=0.35, fy=0.35)
 
     # Converte a imagem para tons de cinza
-    gray_img = cv2.cvtColor(ismagem_redimensionada, cv2.COLOR_BGR2GRAY)
+    gray_img = cv2.cvtColor(imagem_redimensionada, cv2.COLOR_BGR2GRAY)
 
     # Tranforma a imagem em preto e branco (binária)
     ret, binary_img = cv2.threshold(gray_img, 127, 255, cv2.THRESH_BINARY)
